@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HP Group</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="logo1.png">
+</head>
+<body>
+    <div id="preloader">
+        <div class="glitch">Hackpider <i class="fas fa-exclamation-triangle danger-icon"></i></div>
+    </div>
+
+    <div id="main-content">
+        <!-- Your main website content goes here -->
+        <header>
+            <h1>BLACK HAT NETWORKS</h1>
+        </header>
+        <section class="content">
+            <h2>Welcome to the Hackpider site!</h2>
+            <p>Access the unknown, explore hidden paths, and dive deep into the clandestine world.</p>
+            
+             <!-- Logo container -->
+        <div class="logo-container">
+            <img src="logo1.png" alt="Black Hat Logo" class="logo">
+        </div>
+            
+            <a href="join.html" class="btn-join">Join Us</a>
+            <a href="password.html" class="btn-join">Tell us</a>
+        </section>
+        <footer>
+            <p>&copy; 2024 Black Hat Network. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+      window.addEventListener('load', function() {
+    setTimeout(function() {
+        document.body.classList.add('loaded');
+    }, 3000); 
+});
+    </script>
+   
+   
+   <!-- Music Player Toggle Button -->
+    <button id="music-toggle-btn">♫</button>
+
+    <!-- Music Player Pop-up -->
+    <div id="music-popup" class="popup">
+        <button id="close-popup-btn">&times;</button>
+        <audio id="audio" controls>
+            <source src="https://timheven.com/uploads/DJ%20Neptune%20-%20Nobody%20Ft%20Joeboy%20&%20Mr%20Eazi.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <script>
+      // script.js
+
+document.addEventListener('DOMContentLoaded', () => {
+    const musicToggleBtn = document.getElementById('music-toggle-btn');
+    const musicPopup = document.getElementById('music-popup');
+    const closePopupBtn = document.getElementById('close-popup-btn');
+    const audio = document.getElementById('audio');
+
+    musicToggleBtn.addEventListener('click', () => {
+        if (musicPopup.style.display === 'none' || musicPopup.style.display === '') {
+            musicPopup.style.display = 'block';
+            audio.play(); // Start playing the audio when the pop-up opens
+        } else {
+            musicPopup.style.display = 'none';
+            audio.pause(); // Pause the audio when the pop-up closes
+        }
+    });
+
+    closePopupBtn.addEventListener('click', () => {
+        musicPopup.style.display = 'none';
+        audio.pause(); // Pause the audio when the pop-up is closed
+    });
+});
+
+    </script>
+</body>
+</html>

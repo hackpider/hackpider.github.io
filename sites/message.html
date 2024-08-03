@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackpider</title>
+    <link rel="stylesheet" href="message.css">
+    <link rel="icon" href="logo.png">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Black Hat Network</h1>
+        </header>
+        <section class="message-section">
+            <h2>Send a Message</h2>
+            <form id="messageForm">
+                <textarea id="messageInput" placeholder="Type your message here..." required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <div id="messageList"></div>
+        </section>
+    </div>
+
+    <script>
+      // script.js
+
+document.addEventListener('DOMContentLoaded', () => {
+    const messageForm = document.getElementById('messageForm');
+    const messageInput = document.getElementById('messageInput');
+    const messageList = document.getElementById('messageList');
+
+    // Function to load messages from localStorage and display them
+    function loadMessages() {
+        const messages = JSON.parse(localStorage.getItem('messages')) || [];
+        messageList.innerHTML = messages.map(msg => `<div class="message">${msg}</div>`).join('');
+    }
+
+    // Function to save a new message to localStorage
+    function saveMessage(msg) {
+        const messages = JSON.parse(localStorage.getItem('messages')) || [];
+        messages.push(msg);
+        localStorage.setItem('messages', JSON.stringify(messages));
+    }
+
+    // Handle form submission
+    messageForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const message = messageInput.value.trim();
+        if (message) {
+            saveMessage(message);
+            messageInput.value = '';
+            loadMessages();
+        }
+    });
+
+    // Load messages when the page loads
+    loadMessages();
+});
+
+    </script>
+</body>
+</html>

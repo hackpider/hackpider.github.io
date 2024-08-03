@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Black Hat Hacker Network</title>
+    <link rel="stylesheet" href="join.css">
+    <link rel="icon" href="logo.png">
+</head>
+<body>
+    <div class="form-container">
+        <h1 class="title">Join Our Network</h1>
+        <form action="https://getform.io/f/bdrykzeb" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="message">Message</label>
+            <input type="text" id="message" name="message" placeholder="Enter your message" required>
+
+            <!-- Add hidden Honeypot input to prevent spam -->
+            <input type="hidden" name="_gotcha" style="display:none !important">
+
+            <!-- Checkbox handle -->
+            <label><input type="checkbox" name="subscribe" value="yes" checked> Subscribe to newsletter</label>
+            <input type="hidden" name="subscribe" value="no">
+
+            <!-- Radio button handle -->
+            <fieldset>
+                <legend>Gender</legend>
+                <label><input type="radio" name="gender" value="male" checked> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="other"> Other</label>
+            </fieldset>
+
+            <!-- Select field handle -->
+            <label for="work-experience">Work Experience</label>
+            <select id="work-experience" name="work-experience">
+                <option value="one-year">0-1 years</option>
+                <option value="one-five-years">1-5 years</option>
+            </select>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
