@@ -3,389 +3,784 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ethio Code Warriors - Ethiopian cybersecurity and programming community providing free resources and education">
-    <meta name="keywords" content="Ethiopian coders, cybersecurity, programming, hacking tools, ethical hacking, Ethiopia tech">
-    <title>Ethio Code Warriors | Ethiopian Cybersecurity Community</title>
+    <title>Hackpider | Cybersecurity Specialist</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <style>
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech&display=swap');
-</style>
-    <link rel="icon" href="assets/logo.png">
+    <link rel="icon" href="logo.png" type="image/png">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="assets/logo.png" alt="Ethio Code Warriors Logo">
-                <h1>ETHIO CODE WARRIORS</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">Cybersecurity</a></li>
-                    <li><a href="#">Programming</a></li>
-                    <li><a href="#">Tools</a></li>
-                    <li><a href="#">Join Us</a></li>
-                    <li><a href="donate.html" class="donate-btn">Donate</a></li>
-                </ul>
-                <div class="mobile-menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+    <!-- Loading Animation -->
+    <div class="loader">
+        <div class="terminal-loader">
+            <div class="terminal-header">
+                <div class="terminal-title">Hackpider.exe</div>
+                <div class="terminal-controls">
+                    <div class="control close"></div>
+                    <div class="control minimize"></div>
+                    <div class="control maximize"></div>
                 </div>
-            </nav>
+            </div>
+            <div class="terminal-content">
+                <div class="text">Initializing system...</div>
+                <div class="text">Bypassing firewalls...</div>
+                <div class="text">Establishing secure connection...</div>
+                <div class="text blink">> Ready</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="header-container">
+                <a href="#" class="logo">
+                    <img src="logo.png" alt="Hackpider Logo" class="logo-img">
+                    <span class="logo-text">Hack<span>pider</span></span>
+                </a>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#concepts">Cyber Concepts</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+            </div>
         </div>
     </header>
 
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h2>EMPOWERING ETHIOPIA'S CYBERSECURITY FUTURE</h2>
-                <p>Join our community of ethical hackers, programmers, and tech enthusiasts dedicated to securing Ethiopia's digital landscape.</p>
-                <div class="cta-buttons">
-                    <a href="#" class="btn-primary">Cheet Sheets</a>
-                    <a href="#" class="btn-secondary">Explore Tools</a>
+    <!-- Hero Section -->
+<section class="hero" id="home">
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to <span>Hackpider</span></h1>
+            <h2 class="hero-subtitle">Cybersecurity Specialist & Ethical Hacker</h2>
+            <p class="hero-text">Securing digital frontiers with cutting-edge techniques and ethical hacking principles. Protecting systems from vulnerabilities and threats with advanced security solutions.</p>
+            <div class="hero-buttons">
+                <a href="#about" class="btn btn-primary">
+                    <span>Explore</span>
+                    <i class="fas fa-arrow-down"></i>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <span>Contact Me</span>
+                    <i class="fas fa-paper-plane"></i>
+                </a>
+            </div>
+            <div class="hero-features">
+                <div class="feature-item">
+                    <i class="fas fa-lock"></i>
+                    <span>Penetration Testing</span>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Vulnerability Assessment</span>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-code"></i>
+                    <span>Secure Coding</span>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section class="about">
-        <div class="container">
-            <h2>WHO WE ARE</h2>
-            <p>We are a passionate team of Ethiopian coders and cybersecurity enthusiasts committed to sharing knowledge and building a safer digital Ethiopia. Our mission is to provide free, accessible education in programming and cybersecurity for all Ethiopians.</p>
-        </div>
-    </section>
-
-    <section class="features">
-        <div class="container">
-            <h2>OUR FOCUS AREAS</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="icon">🛡️</div>
-                    <h3>Cybersecurity</h3>
-                    <p>Learn about ethical hacking, penetration testing, and how to protect yourself online.</p>
+        <div class="hero-image">
+            <div class="hexagon-container">
+                <div class="hexagon">
+                    <div class="hexagon-inner">
+                        <div class="hexagon-content">
+                            <div class="cyber-circle">
+                                <div class="circle-inner">
+                                    <i class="fas fa-user-secret"></i>
+                                </div>
+                                <div class="circle-pulse"></div>
+                                <div class="circle-pulse delay-1"></div>
+                                <div class="circle-pulse delay-2"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="icon">💻</div>
-                    <h3>Programming</h3>
-                    <p>Master coding skills with our free resources on Python, JavaScript, and more.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon">🔍</div>
-                    <h3>Hacking Tools</h3>
-                    <p>Explore tools like Burp Suite, Maltego, and WiFi hacking utilities.</p>
+                <div class="hexagon-border"></div>
+                <div class="hexagon-dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="tools">
-    <div class="container">
-        <h2>ADVANCED HACKING TOOLS WE COVER</h2>
-        <div class="tools-grid">
-            <!-- Existing tools -->
-            <div class="tool-card">
-                <h3>Maltego</h3>
-                <p>For open-source intelligence and forensics</p>
-            </div>
-            <div class="tool-card">
-                <h3>Burp Suite</h3>
-                <p>Web application security testing</p>
-            </div>
-            <div class="tool-card">
-                <h3>Aircrack-ng</h3>
-                <p>WiFi network security assessment</p>
-            </div>
-            <div class="tool-card">
-                <h3>Metasploit</h3>
-                <p>Penetration testing framework</p>
-            </div>
-            
-            <!-- New obscure tools -->
-            <div class="tool-card">
-                <h3>Fierce</h3>
-                <p>DNS reconnaissance tool for locating non-contiguous IP space</p>
-            </div>
-            <div class="tool-card">
-                <h3>SpiderFoot</h3>
-                <p>Automated OSINT collection and analysis</p>
-            </div>
-            <div class="tool-card">
-                <h3>Gophish</h3>
-                <p>Open-source phishing framework for awareness training</p>
-            </div>
-            <div class="tool-card">
-                <h3>Sn1per</h3>
-                <p>Automated pentest reconnaissance scanner</p>
-            </div>
-            <div class="tool-card">
-                <h3>theHarvester</h3>
-                <p>Gathers emails, subdomains, hosts from public sources</p>
-            </div>
-            <div class="tool-card">
-                <h3>OSINT Framework</h3>
-                <p>Collection of intelligence gathering tools</p>
-            </div>
-            <div class="tool-card">
-                <h3>Recon-ng</h3>
-                <p>Web reconnaissance framework with modules</p>
-            </div>
-            <div class="tool-card">
-                <h3>Sherlock</h3>
-                <p>Hunt down social media accounts by username</p>
-            </div>
-            <div class="tool-card">
-                <h3>PhoneInfoga</h3>
-                <p>Advanced phone number investigation tool</p>
-            </div>
-            <div class="tool-card">
-                <h3>Social Engineer Toolkit (SET)</h3>
-                <p>Advanced attacks against human element</p>
+            <div class="binary-code">
+                <div class="code-line">01001000 01100001 01100011 01101011 01110000 01101001 01100100 01100101 01110010</div>
+                <div class="code-line">01010011 01100101 01100011 01110101 01110010 01101001 01110100 01111001 00100000 01010011 01110000 01100101 01100011 01101001 01100001 01101100 01101001 01110011 01110100</div>
+                <div class="code-line">01000101 01110100 01101000 01101001 01100011 01100001 01101100 00100000 01001000 01100001 01100011 01101011 01101001 01101110 01100111</div>
             </div>
         </div>
     </div>
-</section>
-
-<section class="programming">
-    <div class="container">
-        <h2>MASTER PROGRAMMING LANGUAGES</h2>
-        <div class="languages-grid">
-            <div class="lang-card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="Python">
-                <h3>Python</h3>
-                <p>Learn ethical hacking, automation, and AI development</p>
-                <ul>
-                    <li>Web Scraping</li>
-                    <li>Security Tools</li>
-                    <li>Data Science</li>
-                </ul>
-                <a href="#" class="btn-secondary">Start Learning</a>
-            </div>
-            <div class="lang-card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" alt="JavaScript">
-                <h3>JavaScript</h3>
-                <p>Build interactive web apps and understand web security</p>
-                <ul>
-                    <li>Frontend Development</li>
-                    <li>Node.js Backend</li>
-                    <li>Browser Exploits</li>
-                </ul>
-                <a href="#" class="btn-secondary">Start Learning</a>
-            </div>
-            <div class="lang-card">
-                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png" alt="Java">
-                <h3>Java</h3>
-                <p>Enterprise applications and Android development</p>
-                <ul>
-                    <li>Spring Framework</li>
-                    <li>Mobile Apps</li>
-                    <li>Secure Coding</li>
-                </ul>
-                <a href="#" class="btn-secondary">Start Learning</a>
-            </div>
-            <div class="lang-card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/640px-ISO_C%2B%2B_Logo.svg.png" alt="C++">
-                <h3>C++</h3>
-                <p>System programming and performance-critical applications</p>
-                <ul>
-                    <li>Game Development</li>
-                    <li>Reverse Engineering</li>
-                    <li>Malware Analysis</li>
-                </ul>
-                <a href="#" class="btn-secondary">Start Learning</a>
-            </div>
-        </div>
+    <div class="particles" id="particles-js"></div>
+    <div class="hero-scroll-indicator">
+        <div class="scroll-line"></div>
+        <span>Scroll Down</span>
     </div>
 </section>
 
-<section class="concepts">
-    <div class="container">
-        <h2>CORE PROGRAMMING CONCEPTS</h2>
-        <div class="concepts-grid">
-            <div class="concept-card">
-                <h3>Algorithms</h3>
-                <p>Learn sorting, searching, and optimization techniques</p>
-                <span class="difficulty intermediate">Intermediate</span>
-            </div>
-            <div class="concept-card">
-                <h3>Data Structures</h3>
-                <p>Master arrays, linked lists, trees, and graphs</p>
-                <span class="difficulty intermediate">Intermediate</span>
-            </div>
-            <div class="concept-card">
-                <h3>OOP Principles</h3>
-                <p>Encapsulation, inheritance, polymorphism</p>
-                <span class="difficulty beginner">Beginner</span>
-            </div>
-            <div class="concept-card">
-                <h3>Secure Coding</h3>
-                <p>Write code resistant to vulnerabilities</p>
-                <span class="difficulty advanced">Advanced</span>
-            </div>
-            <div class="concept-card">
-                <h3>API Development</h3>
-                <p>Build RESTful and GraphQL APIs</p>
-                <span class="difficulty intermediate">Intermediate</span>
-            </div>
-            <div class="concept-card">
-                <h3>Database Design</h3>
-                <p>SQL and NoSQL database architecture</p>
-                <span class="difficulty intermediate">Intermediate</span>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="ethiopian-tech">
-    <div class="container">
-        <h2>PROGRAMMING IN THE ETHIOPIAN CONTEXT</h2>
-        <div class="tech-content">
-            <div class="tech-text">
-                <h3>Localized Learning Resources</h3>
-                <p>We provide programming examples and case studies relevant to Ethiopian systems and infrastructure, including:</p>
-                <ul>
-                    <li>Amharic text processing</li>
-                    <li>Solutions for limited bandwidth</li>
-                    <li>Local payment system integrations</li>
-                    <li>Ethiopian calendar implementations</li>
-                </ul>
-                <a href="#" class="btn-primary">Explore Ethiopian Examples</a>
-            </div>
-            <div class="tech-image">
-                <img src="assets/codeet.jpg" alt="Ethiopian Programming">
-            </div>
-        </div>
-    </div>
-</section>
-
-    <section class="cyber-threats">
-    <div class="container">
-        <h2>LESSER-KNOWN CYBER THREATS</h2>
-        <div class="threats-grid">
-            <!-- Existing threats -->
-            <div class="threat-card">
-                <h3>Phishing Attacks</h3>
-                <p>Fraudulent attempts to obtain sensitive information</p>
-            </div>
-            <div class="threat-card">
-                <h3>Man-in-the-Middle</h3>
-                <p>Eavesdropping on communications</p>
-            </div>
-            <div class="threat-card">
-                <h3>SQL Injection</h3>
-                <p>Exploiting database vulnerabilities</p>
-            </div>
-            
-            <!-- New obscure threats -->
-            <div class="threat-card">
-                <h3>Watering Hole Attacks</h3>
-                <p>Infecting websites frequented by target groups</p>
-            </div>
-            <div class="threat-card">
-                <h3>Pastebin Phishing</h3>
-                <p>Using legitimate sites to host malicious content</p>
-            </div>
-            <div class="threat-card">
-                <h3>Typosquatting</h3>
-                <p>Registering domains similar to popular sites</p>
-            </div>
-            <div class="threat-card">
-                <h3>Formjacking</h3>
-                <p>Stealing credit card details from payment forms</p>
-            </div>
-            <div class="threat-card">
-                <h3>SIM Swapping</h3>
-                <p>Taking control of phone numbers to bypass 2FA</p>
-            </div>
-            <div class="threat-card">
-                <h3>USB Drop Attacks</h3>
-                <p>Planting malware-loaded USB drives in public spaces</p>
-            </div>
-            <div class="threat-card">
-                <h3>Evil Twin WiFi</h3>
-                <p>Rogue access points mimicking legitimate networks</p>
-            </div>
-            <div class="threat-card">
-                <h3>Fake Updates</h3>
-                <p>Malware disguised as software updates</p>
-            </div>
-            <div class="threat-card">
-                <h3>Session Hijacking</h3>
-                <p>Stealing active session cookies to impersonate users</p>
-            </div>
-            <div class="threat-card">
-                <h3>Clickjacking</h3>
-                <p>Tricking users into clicking hidden elements</p>
-            </div>
-            <div class="threat-card">
-                <h3>DNS Cache Poisoning</h3>
-                <p>Redirecting traffic to malicious sites</p>
-            </div>
-            <div class="threat-card">
-                <h3>Stalkerware</h3>
-                <p>Spy apps installed by jealous partners</p>
-            </div>
-            <div class="threat-card">
-                <h3>Fleeceware</h3>
-                <p>Apps with hidden excessive subscription fees</p>
-            </div>
-            <div class="threat-card">
-                <h3>QR Code Phishing</h3>
-                <p>Malicious QR codes redirecting to phishing sites</p>
-            </div>
-            <div class="threat-card">
-                <h3>Juice Jacking</h3>
-                <p>Compromised public charging stations</p>
-            </div>
-            <div class="threat-card">
-                <h3>MFA Fatigue</h3>
-                <p>Bombarding users with auth requests until approval</p>
-            </div>
-            <div class="threat-card">
-                <h3>SEO Poisoning</h3>
-                <p>Boosting malicious sites in search results</p>
-            </div>
-            <div class="threat-card">
-                <h3>Dark Pattern Design</h3>
-                <p>UI tricks forcing unwanted actions</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-    <section class="join">
+    <!-- About Section -->
+    <section class="about" id="about">
         <div class="container">
-            <h2>READY TO JOIN THE CODE WARRIORS?</h2>
-            <p>Become part of Ethiopia's growing cybersecurity community. Learn, share, and grow with us.</p>
-            <a href="#" class="btn-primary">Join Our Community</a>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <img src="assets/logo.png" alt="Ethio Code Warriors Logo">
-                    <h3>ETHIO CODE WARRIORS</h3>
-                    <p>Empowering Ethiopia's digital future through cybersecurity and programming education.</p>
+            <div class="section-header">
+                <h2 class="section-title">About <span>Me</span></h2>
+                <div class="section-divider">
+                    <div class="divider-line"></div>
+                    <div class="divider-icon"><i class="fas fa-user-secret"></i></div>
+                    <div class="divider-line"></div>
                 </div>
-                <div class="social-links">
-                    <h4>CONNECT WITH US</h4>
-                    <div class="social-icons">
-                        <a href="https://www.youtube.com/@EthioCodeWarriors" target="_blank" aria-label="YouTube"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/YouTube_social_white_circle_%282017%29.svg/640px-YouTube_social_white_circle_%282017%29.svg.png" alt="YouTube"></a>
-                        <a href="https://t.me/EthioCodeWarrior" target="_blank" aria-label="Telegram"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/240px-Telegram_logo.svg.png" alt="Telegram"></a>
-                        <a href="#" target="_blank" aria-label="TikTok"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Tiktok_icon.svg/640px-Tiktok_icon.svg.png" alt="TikTok"></a>
-                        <a href="#" aria-label="Instagram"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/240px-Instagram_logo_2016.svg.png" alt="Instagram"></a>
+                <p class="section-subtitle">Who is behind Hackpider?</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <img src="https://via.placeholder.com/300x300" alt="Profile Image" class="profile-img">
+                            <div class="profile-overlay">
+                                <div class="profile-icons">
+                                    <a href="#"><i class="fab fa-github"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h3>Cybersecurity Student</h3>
+                            <p>Ethical Hacker | Penetration Tester</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Securing the Digital World</h3>
+                    <p>I am a passionate cybersecurity student dedicated to protecting digital infrastructure from malicious threats. With expertise in ethical hacking, penetration testing, and secure coding practices, I help organizations fortify their defenses.</p>
+                    <p>My journey in cybersecurity began with a curiosity about how systems work and how they can be protected. I believe in using my skills for ethical purposes and contributing to a safer digital ecosystem.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="50">0</div>
+                            <div class="stat-text">Projects Completed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="100">0</div>
+                            <div class="stat-text">Vulnerabilities Found</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="5">0</div>
+                            <div class="stat-text">Certifications</div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="copyright">
-                <p>&copy; 2025 Ethio Code Warriors. A team of passionate Ethiopian coders.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My <span>Skills</span></h2>
+                <div class="section-divider">
+                    <div class="divider-line"></div>
+                    <div class="divider-icon"><i class="fas fa-code"></i></div>
+                    <div class="divider-line"></div>
+                </div>
+                <p class="section-subtitle">Tools and technologies I work with</p>
+            </div>
+            <div class="skills-content">
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML">
+                        </div>
+                        <h3 class="skill-title">HTML5</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90"></div>
+                        </div>
+                        <div class="skill-percent">90%</div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS">
+                        </div>
+                        <h3 class="skill-title">CSS3</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                        <div class="skill-percent">85%</div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="JavaScript">
+                        </div>
+                        <h3 class="skill-title">JavaScript</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                        <div class="skill-percent">80%</div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python">
+                        </div>
+                        <h3 class="skill-title">Python</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75"></div>
+                        </div>
+                        <div class="skill-percent">75%</div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Bash_Logo_Colored.svg" alt="Bash">
+                        </div>
+                        <h3 class="skill-title">Bash</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="70"></div>
+                        </div>
+                        <div class="skill-percent">70%</div>
+                    </div>
+                </div>
+                <div class="skills-text">
+                    <h3>Technical Expertise</h3>
+                    <p>My skill set combines both defensive and offensive cybersecurity techniques, allowing me to approach security challenges from multiple perspectives.</p>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Web Application Security</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Network Security</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Penetration Testing</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Vulnerability Assessment</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Secure Coding Practices</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cybersecurity Concepts Section -->
+    <section class="concepts" id="concepts">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Cyber <span>Concepts</span></h2>
+                <div class="section-divider">
+                    <div class="divider-line"></div>
+                    <div class="divider-icon"><i class="fas fa-brain"></i></div>
+                    <div class="divider-line"></div>
+                </div>
+                <p class="section-subtitle">20 Essential Cybersecurity Concepts Explained</p>
+            </div>
+            <div class="concepts-grid">
+                <!-- Concept 1 -->
+                <div class="concept-card">
+                    <div class="concept-image">
+                        <img src="assets/concepts/phishing.jpg" alt="Phishing">
+                        <div class="concept-overlay">
+                            <i class="fas fa-fish"></i>
+                        </div>
+                    </div>
+                    <div class="concept-content">
+                        <h3>Phishing Attacks</h3>
+                        <p>Deceptive attempts to steal sensitive information by masquerading as trustworthy entities through electronic communication.</p>
+                        <div class="concept-tags">
+                            <span>Social Engineering</span>
+                            <span>Email Security</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Concept 2 -->
+                <div class="concept-card">
+                    <div class="concept-image">
+                        <img src="assets/concepts/ddos.jpg" alt="DDoS">
+                        <div class="concept-overlay">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                    </div>
+                    <div class="concept-content">
+                        <h3>DDoS Attacks</h3>
+                        <p>Distributed Denial of Service attacks overwhelm systems with traffic from multiple sources, disrupting normal operations.</p>
+                        <div class="concept-tags">
+                            <span>Network Security</span>
+                            <span>Availability</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Concept 3 -->
+                <div class="concept-card">
+                    <div class="concept-image">
+                        <img src="assets/concepts/encryption.jpg" alt="Encryption">
+                        <div class="concept-overlay">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                    </div>
+                    <div class="concept-content">
+                        <h3>Encryption</h3>
+                        <p>The process of encoding information to make it unreadable to unauthorized parties, ensuring data confidentiality.</p>
+                        <div class="concept-tags">
+                            <span>Cryptography</span>
+                            <span>Data Protection</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Concept 4 -->
+                <div class="concept-card">
+                    <div class="concept-image">
+                        <img src="assets/concepts/malware.jpg" alt="Malware">
+                        <div class="concept-overlay">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                    </div>
+                    <div class="concept-content">
+                        <h3>Malware</h3>
+                        <p>Malicious software designed to damage, disrupt, or gain unauthorized access to computer systems.</p>
+                        <div class="concept-tags">
+                            <span>Viruses</span>
+                            <span>Ransomware</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Concept 5 -->
+                <div class="concept-card">
+                    <div class="concept-image">
+                        <img src="assets/concepts/firewall.jpg" alt="Firewall">
+                        <div class="concept-overlay">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
+                    <div class="concept-content">
+                        <h3>Firewalls</h3>
+                        <p>Network security systems that monitor and control incoming and outgoing network traffic based on predetermined security rules.</p>
+                        <div class="concept-tags">
+                            <span>Network Security</span>
+                            <span>Access Control</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Concept 6 -->
+                <div class="concept-card">
+                    <div class="concept-image">
+                        <img src="assets/concepts/zero-day.jpg" alt="Zero Day">
+                        <div class="concept-overlay">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                    </div>
+                    <div class="concept-content">
+                        <h3>Zero-Day Exploits</h3>
+                        <p>Vulnerabilities unknown to the vendor that are exploited by attackers before a patch is available.</p>
+                        <div class="concept-tags">
+                            <span>Vulnerabilities</span>
+                            <span>Patch Management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Concept 7 -->
+                <div class="concept-card">
+                    <div class="concept-image">
+                        <img src="assets/concepts/social-engineering.jpg" alt="Social Engineering">
+                        <div class="concept-overlay">
+                            <i class="fas fa-user-edit"></i>
+                        </div>
+                    </div>
+                    <div class="concept-content">
+                        <h3>Social Engineering</h3>
+                        <p>Psychological manipulation of people into performing actions or divulging confidential information.</p>
+                        <div class="concept-tags">
+                            <span>Human Factor</span>
+                            <span>Manipulation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Concept 8 -->
+                <div class="concept-card">
+                    <div class="concept-image">
+                        <img src="assets/concepts/pen-testing.jpg" alt="Pen Testing">
+                        <div class="concept-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                    <div class="concept-content">
+                        <h3>Penetration Testing</h3>
+                        <p>Authorized simulated cyber attacks on systems to evaluate security and identify vulnerabilities.</p>
+                        <div class="concept-tags">
+                            <span>Ethical Hacking</span>
+                            <span>Security Assessment</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Concept 9 -->
+                <div class="concept-card">
+                    <div class="concept-image">
+                        <img src="assets/concepts/iot.jpg" alt="IoT Security">
+                        <div class="concept-overlay">
+                            <i class="fas fa-plug"></i>
+                        </div>
+                    </div>
+                    <div class="concept-content">
+                        <h3>IoT Security</h3>
+                        <p>Protecting internet-connected devices and networks they're connected to from threats and breaches.</p>
+                        <div class="concept-tags">
+                            <span>Smart Devices</span>
+                            <span>Network Security</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Concept 10 -->
+                <div class="concept-card">
+                    <div class="concept-image">
+                        <img src="assets/concepts/blockchain.jpg" alt="Blockchain">
+                        <div class="concept-overlay">
+                            <i class="fas fa-link"></i>
+                        </div>
+                    </div>
+                    <div class="concept-content">
+                        <h3>Blockchain Security</h3>
+                        <p>Decentralized, distributed ledger technology that provides enhanced security through cryptography.</p>
+                        <div class="concept-tags">
+                            <span>Cryptocurrency</span>
+                            <span>Decentralization</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Concept 11 -->
+                <div class="concept-card">
+                    <div class="concept-image">
+                        <img src="assets/concepts/ai-security.jpg" alt="AI Security">
+                        <div class="concept-overlay">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                    </div>
+                    <div class="concept-content">
+                        <h3>AI in Cybersecurity</h3>
+                        <p>Using artificial intelligence to detect, analyze, and respond to cyber threats in real-time.</p>
+                        <div class="concept-tags">
+                            <span>Machine Learning</span>
+                            <span>Threat Detection</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Concept 12 -->
+                <div class="concept-card">
+                    <div class="concept-image">
+                        <img src="assets/concepts/cloud-security.jpg" alt="Cloud Security">
+                        <div class="concept-overlay">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                    </div>
+                    <div class="concept-content">
+                        <h3>Cloud Security</h3>
+                        <p>Protecting cloud-based systems, data, and infrastructure from cyber threats and vulnerabilities.</p>
+                        <div class="concept-tags">
+                            <span>Data Protection</span>
+                            <span>Shared Responsibility</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Concept 13 -->
+                <div class="concept-card">
+                    <div class="concept-image">
+                        <img src="assets/concepts/ransomware.jpg" alt="Ransomware">
+                        <div class="concept-overlay">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                    </div>
+                    <div class="concept-content">
+                        <h3>Ransomware</h3>
+                        <p>Malicious software that encrypts files and demands payment for their release.</p>
+                        <div class="concept-tags">
+                            <span>Extortion</span>
+                            <span>Malware</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Concept 14 -->
+                <div class="concept-card">
+                    <div class="concept-image">
+                        <img src="assets/concepts/vpn.jpg" alt="VPN">
+                        <div class="concept-overlay">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                    </div>
+                    <div class="concept-content">
+                        <h3>VPN Security</h3>
+                        <p>Virtual Private Networks create secure, encrypted connections for remote access and privacy.</p>
+                        <div class="concept-tags">
+                            <span>Privacy</span>
+                            <span>Encryption</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Concept 15 -->
+                <div class="concept-card">
+                    <div class="concept-image">
+                        <img src="assets/concepts/bug-bounty.jpg" alt="Bug Bounty">
+                        <div class="concept-overlay">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                    </div>
+                    <div class="concept-content">
+                        <h3>Bug Bounty Programs</h3>
+                        <p>Incentivized vulnerability disclosure programs that reward security researchers for finding bugs.</p>
+                        <div class="concept-tags">
+                            <span>Ethical Hacking</span>
+                            <span>Responsible Disclosure</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Concept 16 -->
+                <div class="concept-card">
+                    <div class="concept-image">
+                        <img src="assets/concepts/biometrics.jpg" alt="Biometrics">
+                        <div class="concept-overlay">
+                            <i class="fas fa-fingerprint"></i>
+                        </div>
+                    </div>
+                    <div class="concept-content">
+                        <h3>Biometric Security</h3>
+                        <p>Authentication methods that use unique biological characteristics like fingerprints or facial recognition.</p>
+                        <div class="concept-tags">
+                            <span>Authentication</span>
+                            <span>Identity Verification</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Concept 17 -->
+                <div class="concept-card">
+                    <div class="concept-image">
+                        <img src="assets/concepts/dark-web.jpg" alt="Dark Web">
+                        <div class="concept-overlay">
+                            <i class="fas fa-eye-slash"></i>
+                        </div>
+                    </div>
+                    <div class="concept-content">
+                        <h3>Dark Web Monitoring</h3>
+                        <p>Tracking illegal activities and data leaks on encrypted networks not indexed by traditional search engines.</p>
+                        <div class="concept-tags">
+                            <span>Cybercrime</span>
+                            <span>Threat Intelligence</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Concept 18 -->
+                <div class="concept-card">
+                    <div class="concept-image">
+                        <img src="assets/concepts/incident-response.jpg" alt="Incident Response">
+                        <div class="concept-overlay">
+                            <i class="fas fa-ambulance"></i>
+                        </div>
+                    </div>
+                    <div class="concept-content">
+                        <h3>Incident Response</h3>
+                        <p>The methodology an organization uses to respond to and manage a cyberattack or data breach.</p>
+                        <div class="concept-tags">
+                            <span>Crisis Management</span>
+                            <span>Forensics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Concept 19 -->
+                <div class="concept-card">
+                    <div class="concept-image">
+                        <img src="assets/concepts/secure-coding.jpg" alt="Secure Coding">
+                        <div class="concept-overlay">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                    </div>
+                    <div class="concept-content">
+                        <h3>Secure Coding</h3>
+                        <p>Writing software source code that is resistant to vulnerabilities and security exploits.</p>
+                        <div class="concept-tags">
+                            <span>Development</span>
+                            <span>Best Practices</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Concept 20 -->
+                <div class="concept-card">
+                    <div class="concept-image">
+                        <img src="assets/concepts/threat-modeling.jpg" alt="Threat Modeling">
+                        <div class="concept-overlay">
+                            <i class="fas fa-chess-board"></i>
+                        </div>
+                    </div>
+                    <div class="concept-content">
+                        <h3>Threat Modeling</h3>
+                        <p>Identifying potential threats and vulnerabilities to prioritize security defenses.</p>
+                        <div class="concept-tags">
+                            <span>Risk Assessment</span>
+                            <span>Security Planning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In <span>Touch</span></h2>
+                <div class="section-divider">
+                    <div class="divider-line"></div>
+                    <div class="divider-icon"><i class="fas fa-paper-plane"></i></div>
+                    <div class="divider-line"></div>
+                </div>
+                <p class="section-subtitle">Ready to secure your digital assets? Let's connect!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Feel free to reach out for cybersecurity consultations, penetration testing, or just to discuss the latest security trends.</p>
+                    <div class="info-items">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-text">
+                                <h4>Location</h4>
+                                <p>Cyberspace</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-text">
+                                <h4>Email</h4>
+                                <p>contact@hackpider.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="info-text">
+                                <h4>Phone</h4>
+                                <p>+1 (555) SEC-URE1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-hacker-news"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="logo">
+                        <img src="assets/logo.png" alt="Hackpider Logo" class="logo-img">
+                        <span class="logo-text">Hack<span>pider</span></span>
+                    </a>
+                    <p>Securing the digital frontier one line of code at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#concepts">Cyber Concepts</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Security Alerts</h3>
+                    <p>Subscribe to receive the latest cybersecurity news and updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit"><i class="fas fa-lock"></i> Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; <span id="year"></span> Hackpider. All rights reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-hacker-news"></i></a>
+                </div>
             </div>
         </div>
     </footer>
 
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
