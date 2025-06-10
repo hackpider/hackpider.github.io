@@ -9,18 +9,18 @@
 <meta property="og:title" content="Hackpider | Cybersecurity Specialist">
 <meta property="og:description" content="Hackpider - Cybersecurity Specialist & Ethical Hacker offering penetration testing, vulnerability assessment, and secure coding solutions.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://www.hackpider.com"> 
-<meta property="og:image" content="https://www.hackpider.com/logo.png"> 
+<meta property="og:url" content="https://hackpider.github.io"> 
+<meta property="og:image" content="https://hackpider.github.io/logo.png"> 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Hackpider | Cybersecurity Specialist">
 <meta name="twitter:description" content="Hackpider - Cybersecurity Specialist & Ethical Hacker offering penetration testing, vulnerability assessment, and secure coding solutions.">
-<meta name="twitter:image" content="https://www.hackpider.com/logo.png"> 
+<meta name="twitter:image" content="https://hackpider.github.io/logo.png"> 
 <meta name="twitter:site" content="@hackpider">
     <title>Hackpider | Cybersecurity Specialist</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="icon" href="logo.png">
 </head>
 <body>
     <!-- Loading Animation -->
@@ -69,75 +69,40 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+<!-- Hero Section -->
 <section class="hero" id="home">
     <div class="container">
         <div class="hero-content">
-            <h1 class="hero-title">Welcome to <span>Hackpider</span></h1>
-            <h2 class="hero-subtitle">Cybersecurity Specialist & Ethical Hacker</h2>
-            <p class="hero-text">Securing digital frontiers with cutting-edge techniques and ethical hacking principles. Protecting systems from vulnerabilities and threats with advanced security solutions.</p>
+            <div class="typing-text">
+                <span class="terminal-prompt">> Welcome to </span>
+                <h1 class="hero-title">
+                    <span class="glitch" data-text="Hackpider">Hackpider</span>
+                    <span class="cursor">_</span>
+                </h1>
+            </div>
+            <h2 class="hero-subtitle">
+                <span class="typewriter" data-strings='["Cybersecurity Specialist", "Ethical Hacker", "Penetration Tester", "Security Researcher"]'></span>
+            </h2>
+            <p class="hero-description">
+                <span class="console-prefix">> </span>
+                <span class="console-text">Securing digital frontiers with cutting-edge techniques and ethical hacking principles.</span>
+            </p>
             <div class="hero-buttons">
                 <a href="#about" class="btn btn-primary">
-                    <span>Explore</span>
-                    <i class="fas fa-arrow-down"></i>
+                    <span>Explore Portfolio</span>
+                    <i class="fas fa-terminal"></i>
                 </a>
                 <a href="#contact" class="btn btn-secondary">
-                    <span>Contact Me</span>
-                    <i class="fas fa-paper-plane"></i>
+                    <span>Initiate Contact</span>
+                    <i class="fas fa-key"></i>
                 </a>
-            </div>
-            <div class="hero-features">
-                <div class="feature-item">
-                    <i class="fas fa-lock"></i>
-                    <span>Penetration Testing</span>
-                </div>
-                <div class="feature-item">
-                    <i class="fas fa-shield-alt"></i>
-                    <span>Vulnerability Assessment</span>
-                </div>
-                <div class="feature-item">
-                    <i class="fas fa-code"></i>
-                    <span>Secure Coding</span>
-                </div>
-            </div>
-        </div>
-        <div class="hero-image">
-            <div class="hexagon-container">
-                <div class="hexagon">
-                    <div class="hexagon-inner">
-                        <div class="hexagon-content">
-                            <div class="cyber-circle">
-                                <div class="circle-inner">
-                                    <i class="fas fa-user-secret"></i>
-                                </div>
-                                <div class="circle-pulse"></div>
-                                <div class="circle-pulse delay-1"></div>
-                                <div class="circle-pulse delay-2"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hexagon-border"></div>
-                <div class="hexagon-dots">
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                </div>
-            </div>
-            <div class="binary-code">
-                <div class="code-line">01001000 01100001 01100011 01101011 01110000 01101001 01100100 01100101 01110010</div>
-                <div class="code-line">01010011 01100101 01100011 01110101 01110010 01101001 01110100 01111001 00100000 01010011 01110000 01100101 01100011 01101001 01100001 01101100 01101001 01110011 01110100</div>
-                <div class="code-line">01000101 01110100 01101000 01101001 01100011 01100001 01101100 00100000 01001000 01100001 01100011 01101011 01101001 01101110 01100111</div>
             </div>
         </div>
     </div>
-    <div class="particles" id="particles-js"></div>
+    <canvas id="matrix-rain" aria-hidden="true"></canvas>
     <div class="hero-scroll-indicator">
         <div class="scroll-line"></div>
-        <span>Scroll Down</span>
+        <span>👇</span>
     </div>
 </section>
 
@@ -283,6 +248,10 @@
                         <div class="skill-item">
                             <i class="fas fa-check-circle"></i>
                             <span>Secure Coding Practices</span>
+                        </div>
+                        <div class="cert-btn">
+                            <a href="hackpider-certificates.pdf"><i class="fa-solid fa-download"></i> DOWNLOAD</a>
+                            <a href="hackpider-certificates.pdf"><i class="fa-solid fa-eye"></i> VIEW CERT</a>
                         </div>
                     </div>
                 </div>
@@ -788,7 +757,7 @@
     </footer>
 
     <!-- Back to Top Button -->
-    <a href="#" class="back-to-top" id="backToTop">
+    <a href="#home" class="back-to-top" id="backToTop">
         <i class="fas fa-arrow-up"></i>
     </a>
 

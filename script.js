@@ -1,3 +1,84 @@
+// Matrix Rain Effect
+function initMatrixRain() {
+    const canvas = document.getElementById('matrix-rain');
+    if (!canvas) return;
+    
+    const ctx = canvas.getContext('2d');
+    canvas.width = canvas.offsetWidth;
+    canvas.height = canvas.offsetHeight;
+
+    const chars = "01";
+    const fontSize = 14;
+    const columns = canvas.width / fontSize;
+    const drops = Array(Math.floor(columns)).fill(1);
+
+    function draw() {
+        ctx.fillStyle = 'rgba(10, 10, 10, 0.05)';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        
+        ctx.fillStyle = '#00ff88';
+        ctx.font = `${fontSize}px monospace`;
+        
+        drops.forEach((drop, i) => {
+            const text = chars.charAt(Math.floor(Math.random() * chars.length));
+            ctx.fillText(text, i * fontSize, drop * fontSize);
+            
+            if (drop * fontSize > canvas.height && Math.random() > 0.975) {
+                drops[i] = 0;
+            }
+            drops[i]++;
+        });
+    }
+
+    setInterval(draw, 50);
+}
+
+// Typewriter Effect
+function initTypewriter() {
+    const elements = document.querySelectorAll('.typewriter');
+    
+    elements.forEach(el => {
+        const strings = JSON.parse(el.getAttribute('data-strings'));
+        let currentString = 0;
+        let currentChar = 0;
+        let isDeleting = false;
+        let isEnd = false;
+        
+        function type() {
+            const fullTxt = strings[currentString];
+            
+            if (isDeleting) {
+                el.textContent = fullTxt.substring(0, currentChar - 1);
+                currentChar--;
+            } else {
+                el.textContent = fullTxt.substring(0, currentChar + 1);
+                currentChar++;
+            }
+            
+            if (!isDeleting && currentChar === fullTxt.length) {
+                isEnd = true;
+                isDeleting = true;
+                setTimeout(type, 2000);
+            } else if (isDeleting && currentChar === 0) {
+                isDeleting = false;
+                currentString = (currentString + 1) % strings.length;
+                setTimeout(type, 500);
+            } else {
+                setTimeout(type, isDeleting ? 100 : 150);
+            }
+        }
+        
+        setTimeout(type, 1000);
+    });
+}
+
+// Add these to your DOMContentLoaded:
+document.addEventListener('DOMContentLoaded', function() {
+    initMatrixRain();
+    initTypewriter();
+    // ... rest of your existing code
+});
+
 document.addEventListener('DOMContentLoaded', function() {
     // Preloader
     const loader = document.querySelector('.loader');
